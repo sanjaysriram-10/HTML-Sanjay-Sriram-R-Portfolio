@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sanjay Sriram R's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      background-color: #131D4F;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 60px;
+      background: rgba(0, 255, 255, 0.308);
+      height: 100vh;
+      transition: width 0.3s ease;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .sidebar:hover {
+      width: 220px;
+    }
+
+    .sidebar a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #254D70;
+    }
+
+    .sidebar span {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .main {
+      margin-left: 60px;
+      padding: 20px;
+      transition: margin-left 0.3s ease;
+    }
+
+    .sidebar:hover ~ .main {
+      margin-left: 220px;
+    }
+
+    #portfol {
+      color: rgba(0, 255, 255, 0.308);
+      font-size: x-large;
+      text-align: center;
+    }
+
+    h2 {
+      color: #638caf;
+    }
+
+    .prj {
+      color: #254D70;
+    }
+
+    #desig {
+      color: darkmagenta;
+    }
+
+    h3 {
+      color: #254D70;
+    }
+
+    .edu {
+      color: darkmagenta;
+    }
+
+    #circle-img {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    fieldset {
+      background-color: #86a9c7;
+      margin: 2%;
+      border-radius: 25px;
+      border: 1px solid #86a9c7;
+    }
+
+    #prof {
+      background-color: aqua;
+      margin: 0 auto;
+      width: 60%;
+      padding-top: 25px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Expandable Sidebar -->
+  <div class="sidebar">
+    <a href="#home"><strong>🏠</strong><span>Home</span></a>
+    <a href="./skills.html"><strong>🧠</strong><span>Skills</span></a>
+    <a href="./project.html"><strong>💼</strong><span>Projects</span></a>
+    <a href="./certifications.html"><strong>📜</strong><span>Certifications</span></a>
+    <a href="./resume.html"><strong>📄</strong><span>Resume</span></a>
+    <a href="./contact me.html"><strong>✉️</strong><span>Contact Me!</span></a>
+  </div>
+
+  <div class="main">
+    <div id="portfol">
+      <h1>MY PORTFOLIO</h1>
+    </div>
+
+    <fieldset id="prof">
+      <img src="./IMG_2334.jpg" id="circle-img" alt="Profile Image">
+      <section id="home">
+        <div id="profile">
+          <p style="font-size: xx-large; color: black;"><b>SANJAY SRIRAM R</b></p>
+          <p id="desig" style="font-size: large;"><b>FRONT - END DEVELOPER</b></p>
+          <hr>
+          <p class="edu">🎓 A Student at KIT - Kalaignarkarunanidhi Institute of Technology, Coimbatore</p>
+          <p class="edu">🔖 B.Tech - Artificial Intelligence and Data Science</p>
+          <p class="edu">🕝 2023 - Present</p>
+        </div>
+    </fieldset>
+    <br>
+    <h2 style="text-align: center;">Professional Summary</h2>
+    <fieldset>
+      <p>Hi, I'm Sanjay Sriram R, a third-year undergraduate student at KIT - Kalaignarkarunanidhi Institute of Technology, majoring in Artificial Intelligence and Data Science. Over the past few months, I’ve gained a solid foundation in core areas such as machine learning, data analytics, and statistics. I’m proficient in tools and languages like Python, SQL, Scikit-learn, and Pandas, and have hands-on experience working with datasets through academic projects and mini-internships.</p>
+      <p>Beyond academics, I'm actively involved in coding platforms like CodeChef and LeetCode. I have also participated in 24-hr, 12-hr, and 3-hr hackathons, allowing me to collaborate with like-minded peers and stay updated with the latest industry trends. I’ve also completed workshops and certifications to deepen my understanding of AI and its applications.</p>
+      <p>Thank you for taking the time to learn a bit about me!</p>
+    </fieldset>
+    <br> <br>
+      <b style="color: whitesmoke;">Created By Sanjay Sriram R</b>
+  </div>
+</body>
+</html>
