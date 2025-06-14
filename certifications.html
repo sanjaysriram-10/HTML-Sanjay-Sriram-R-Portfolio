@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Certifications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            font-family: "Montserrat", sans-serif;
+            background-color: #131D4F;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        h2 {
+            color: #638caf;
+        }
+
+        fieldset {
+            background-color: #86a9c7;
+            border-radius: 25px;
+            border-radius: 25px;
+            border: 1px solid #86a9c7;
+            margin: 2%;
+        }
+
+        .sidebar {
+            width: 60px;
+            background: rgba(0, 255, 255, 0.308);
+            height: 100vh;
+            transition: width 0.3s ease;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar:hover {
+            width: 220px;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #254D70;
+        }
+
+        .sidebar span {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #certi {
+            margin-left: 60px;
+            padding: 20px;
+            flex: 1;
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar:hover~#certi {
+            margin-left: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="sidebar">
+            <a href="./index.html"><strong>🏠</strong><span>Home</span></a>
+            <a href="./skills.html"><strong>🧠</strong><span>Skills</span></a>
+            <a href="./project.html"><strong>💼</strong><span>Projects</span></a>
+            <a href="./certifications.html"><strong>📜</strong><span>Certifications</span></a>
+            <a href="./resume.html"><strong>📄</strong><span>Resume</span></a>
+            <a href="./contact me.html"><strong>✉️</strong><span>Contact Me!</span></a>
+        </div>
+        <div id="certi">
+            <h2>Certifications</h2>
+            <fieldset>
+                <h3>NPTEL Certificates</h3>
+                <hr width="400">
+                <p>➡️ Soft Skill Development</p>
+                <p>➡️ Design Thinking - A Primer</p>
+                <hr width="700">
+                <h3>Online Certificates</h3>
+                <hr width="400">
+                <h4>INFOSYS SPRINGBOARD</h4>
+                <p>➡️ Foundations of Python</p>
+                <p>➡️ Foundations of Java</p>
+                <p>➡️ Programming Fundamentals using Python</p>
+                <hr width="400">
+                <h4>COURSERA</h4>
+                <p>➡️ Foundations of Data Structures and Algorithms</p>
+                <p>➡️ Introduction to Artificial Intelligence</p>
+                <p>➡️ Data visualization with Python</p>
+                <p>➡️ Foundations of Data Science</p>
+                <p>➡️ Advanced linear models for Data Science, And so on...</p>
+                <hr width="400">
+                <h4>ALTAIR ONE</h4>
+                <p>➡️ Data Engineering Master Certification</p>
+                <p>➡️ Machine Learning Master certification</p>
+                <p>➡️ Platform Administration Master Certification</p>
+                <hr width="700">
+                <h3>External Certificates</h3>
+                <hr width="400">
+                <p>➡️ Achieved First prize in Paper Presentation at SRIET - Coimbatore</p>
+                <p>➡️ Achieved First prize in Ideathon at CIET - Coimbatore</p>
+            </fieldset>
+        </div>
+    </center>
+</body>
+
+</html>

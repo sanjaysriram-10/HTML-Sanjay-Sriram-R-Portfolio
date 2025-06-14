@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Me!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family: "Montserrat", sans-serif;
+            background-color: #131D4F;
+        }
+
+        h2{
+            text-align: center;
+            color: #638caf;
+        }
+
+        fieldset{
+            background-color: #86a9c7;
+            margin: 2%;
+            border-radius: 25px;
+            border: 1px solid #86a9c7;
+        }
+
+        .sidebar {
+            width: 60px;
+            background: rgba(0, 255, 255, 0.308);
+            height: 100vh;
+            transition: width 0.3s ease;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar:hover {
+            width: 220px;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #254D70;
+        }
+
+        .sidebar span {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #cont {
+            margin-left: 60px;
+            padding: 20px;
+            flex: 1;
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar:hover ~ #cont {
+            margin-left: 220px;
+        }
+
+        img{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="sidebar">
+            <a href="./index.html"><strong>🏠</strong><span>Home</span></a>
+            <a href="./skills.html"><strong>🧠</strong><span>Skills</span></a>
+            <a href="./project.html"><strong>💼</strong><span>Projects</span></a>
+            <a href="./certifications.html"><strong>📜</strong><span>Certifications</span></a>
+            <a href="./resume.html"><strong>📄</strong><span>Resume</span></a>
+            <a href="./contact me.html"><strong>✉️</strong><span>Contact Me!</span></a>
+        </div>
+    <div id="cont">
+        <h2>Contact Me!</h2>
+        <fieldset>
+            <p>☎️ +91 9150992211</p> 
+            <p>📧 sriramsanjay01@gmail.com</p>
+            <p>📍 Coimbatore, Tamil Nadu</p>
+            <p><b>LinkedIn: </b><a href="https://www.linkedin.com/in/sanjay-sriram-r-580430291/" class="prj">Sanjay Sriram R</a></p>
+            <p><b>Github: </b><a href="https://github.com/sanjaysriram-10" class="prj">sanjaysriram-10</a></p>
+            <hr width="700">
+            <h2>Coding Profiles</h2>
+                <a href="https://codolio.com/profile/sanjay_sriram" target="_blank">
+                    <img src="./Coolio-removebg-preview.png" height="100px" width="150px"></a>
+                <a href="https://www.codechef.com/users/sanjay_sriram" target="_blank">
+                    <img src="./CodeChef.png" alt="" width="150px" height="100px"></a> <br>
+                <a href="https://leetcode.com/u/sanjay_sriram7/" target="_blank">
+                    <img src="./leetode_1_-removebg-preview.png" alt="" width="150px" height="35px"></a>
+        </fieldset>
+    </div>
+    </center>
+
+</body>
+</html>

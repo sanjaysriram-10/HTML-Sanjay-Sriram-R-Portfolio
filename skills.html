@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            font-family: "Montserrat", sans-serif;
+            background-color: #131D4F;
+        }
+
+        h2 {
+            text-align: center;
+            color: #638caf;
+        }
+
+        fieldset {
+            background-color: #86a9c7;
+            margin: 2%;
+            border-radius: 25px;
+            border: 1px solid #86a9c7;
+        }
+
+        .sidebar {
+            width: 60px;
+            background: rgba(0, 255, 255, 0.308);
+            height: 100vh;
+            transition: width 0.3s ease;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar:hover {
+            width: 220px;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #254D70;
+        }
+
+        .sidebar span {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #skill {
+            margin-left: 60px;
+            padding: 20px;
+            flex: 1;
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar:hover ~ #skill {
+            margin-left: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="sidebar">
+            <a href="./index.html"><strong>🏠</strong><span>Home</span></a>
+            <a href="./skills.html"><strong>🧠</strong><span>Skills</span></a>
+            <a href="./project.html"><strong>💼</strong><span>Projects</span></a>
+            <a href="./certifications.html"><strong>📜</strong><span>Certifications</span></a>
+            <a href="./resume.html"><strong>📄</strong><span>Resume</span></a>
+            <a href="./contact me.html"><strong>✉️</strong><span>Contact Me!</span></a>
+        </div>
+        <div id="skill">
+            <h2 style="text-align: center;">Skills</h2>
+            <fieldset>
+                <table style="text-align:center;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 33%;" id="prog">
+                                <h3>Programming Languages:</h3>
+                                <img src="./C-removebg-preview.png" width="40" alt=""><br> <br>
+                                <img src="./C++-removebg-preview.png" width="50" alt=""><br> <br>
+                                <img src="./Python-removebg-preview.png" width="90" alt=""><br><br>
+                                <img src="./Java-removebg-preview.png" width="40" alt=""><br><br>
+                                <img src="./HTML-removebg-preview.png" width="40" alt=""><br><br>
+                                <img src="./CSS-removebg-preview.png" width="40" alt=""><br>
+                            </td>
+                            <td style="width: 33%;" id="tool">
+                                <h3>Tools:</h3>
+                                <img src="./Git-removebg-preview.png" width="100" alt=""> <br> <br>
+                                <img src="./VS_Code-removebg-preview.png" width="100" alt=""> <br> <br>
+                                <img src="./Jupyter-removebg-preview.png" width="70" alt=""> <br> <br>
+                                <img src="./Colab-removebg-preview.png" width="70" alt=""> <br> <br>
+                                <img src="./Excel-removebg-preview.png" width="70" alt=""> <br>
+                                <img src="./Power_BI-removebg-preview (1).png" width="180" alt=""> <br>
+
+                            </td>
+                            <td style="width: 33%;" id="other">
+                                <ul>
+                                    <h3>DSA</h3>
+                                    <h3>DBMS</h3>
+                                    <h3>OOPS</h3>
+                                    <h3>Data Science</h3>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+    </center>
+</body>
+
+</html>

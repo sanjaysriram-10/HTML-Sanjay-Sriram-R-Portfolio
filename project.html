@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family: "Montserrat", sans-serif;
+            background-color: #131D4F;
+        }
+        h3{
+            color: black;
+        }
+        h2{
+            color: #638caf;
+        }
+
+        fieldset{
+            background-color: #86a9c7;  
+            border-radius: 25px;
+            border-radius: 25px;
+            border: 1px solid #86a9c7;
+            margin: 2%;
+        }
+        
+        .sidebar {
+            width: 60px;
+            background: rgba(0, 255, 255, 0.308);
+            height: 100vh;
+            transition: width 0.3s ease;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar:hover {
+            width: 220px;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #254D70;
+        }
+
+        .sidebar span {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #proj {
+            margin-left: 60px;
+            padding: 20px;
+            flex: 1;
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar:hover ~ #proj {
+            margin-left: 220px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="sidebar">
+            <a href="./index.html"><strong>🏠</strong><span>Home</span></a>
+            <a href="./skills.html"><strong>🧠</strong><span>Skills</span></a>
+            <a href="./project.html"><strong>💼</strong><span>Projects</span></a>
+            <a href="./certifications.html"><strong>📜</strong><span>Certifications</span></a>
+            <a href="./resume.html"><strong>📄</strong><span>Resume</span></a>
+            <a href="./contact me.html"><strong>✉️</strong><span>Contact Me!</span></a>
+        </div>
+        <div id="proj">
+        <h2>Projects</h2>
+        <fieldset>
+            <a href="https://github.com/sanjaysriram-10/ML-Credit-Card-Fraud-Detection" style="text-decoration: none;"><h3>Credit Card Fraud Detection</h3></a>
+            <p>This project builds a machine learning model to detect fraudulent credit card transactions byanalyzing historical data and identifying suspicious patterns.</p>
+            <hr width="700">
+            <a href="./Movie rating project.html" style="text-decoration: none;"><h3>Movie Rating Project using HTML</h3></a>
+            <p>This project is about listing the top rated movies by IMDb, and also the short description of the listed movies.</p>
+            <hr width="700"> 
+            <a href="./B'day Invite Project using HTML.html" style="text-decoration: none;"><h3>Birthday Invitation Project using HTML</h3></a>
+            <p>This project builds a simple birthday invitation mentioning the stuffs available in the event and also with location's link using HTML.</p>
+            <hr width="700">
+            <a href="https://github.com/sanjaysriram-10/HTML-College-Admission-Application-Form" style="text-decoration: none;"><h3>College Admission Application using HTML</h3></a>
+            <p>This prject builds a college admission application and also mentioned with different fields of study available using HTML.</p>
+            <hr width="700">
+            <a href="https://github.com/sanjaysriram-10/HTML-Sanjay-Sriram-Resume" style="text-decoration: none;"><h3>Resume using HTML & CSS</h3></a>
+            <p>This Project builds a simple Resume of myself which is done using HTML & some font-related styles using CSS.</p>
+        </fieldset>
+        </div>
+    </center>
+</body>
+</html>
